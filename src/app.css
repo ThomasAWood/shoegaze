@@ -1,0 +1,119 @@
+:root {
+  --bg: #0b0b0c;
+  --panel: #141416;
+  --panel-2: #1b1b1e;
+  --line: #2a2a2e;
+  --text: #e9e9ec;
+  --muted: #9a9aa3;
+  --accent: #f5c542;
+  --accent-ink: #1c1503;
+  --danger: #f87171;
+  --ok: #4ade80;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+#app {
+  height: 100%;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  border-color: #3d3d44;
+  background: #222226;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+}
+
+button.primary:hover:not(:disabled) {
+  filter: brightness(1.08);
+  background: var(--accent);
+}
+
+button.ghost {
+  background: transparent;
+}
+
+input[type='text'],
+input[type='number'],
+select {
+  font: inherit;
+  color: var(--text);
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+input:focus-visible,
+select:focus-visible,
+button:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 1px;
+}
+
+input[type='range'] {
+  accent-color: var(--accent);
+  width: 100%;
+}
+
+input[type='checkbox'] {
+  accent-color: var(--accent);
+}
+
+h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+code {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0 4px;
+  font-size: 12px;
+}
+
+kbd {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  padding: 0 5px;
+  font-size: 11px;
+}
