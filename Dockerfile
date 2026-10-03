@@ -1,9 +1,9 @@
 FROM node:22-alpine AS build
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci
+RUN npm ci --ignore-scripts
 COPY . .
-RUN npm run build -- --base=/shoegaze/
+RUN node scripts/sync-ffmpeg.mjs && npm run build -- --base=/shoegaze/
 
 FROM nginx:alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
