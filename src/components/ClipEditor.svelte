@@ -229,7 +229,7 @@
 
   .len {
     color: var(--accent);
-    background: rgba(245, 197, 66, 0.08);
+    background: rgba(96, 165, 250, 0.08);
     border: 1px solid var(--line);
     border-radius: 5px;
     padding: 2px 8px;
