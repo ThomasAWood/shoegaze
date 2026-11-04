@@ -150,7 +150,7 @@
   class:dragging
   bind:this={box}
   role="slider"
-  aria-label="Timeline: drag the yellow handles to trim, drag elsewhere to scrub"
+  aria-label="Timeline: drag the blue handles to trim, drag elsewhere to scrub"
   aria-valuemin={0}
   aria-valuemax={Math.round(duration * 100) / 100}
   aria-valuenow={Math.round(currentTime * 100) / 100}

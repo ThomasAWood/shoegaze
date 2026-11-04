@@ -68,7 +68,7 @@
   .hero:hover,
   .hero.over {
     border-color: var(--accent);
-    background: rgba(245, 197, 66, 0.04);
+    background: rgba(96, 165, 250, 0.04);
     color: var(--text);
   }
 
