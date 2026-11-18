@@ -40,3 +40,4 @@ The tool runs [ffmpeg.wasm](https://ffmpegwasm.netlify.app/) in a web worker.
 - The wasm heap is 32-bit, so source files over about 1.5 GB may fail to load.
 - If the browser cannot decode a file (some phone HEVC, for example), the tool
   cannot load it either.
+<!-- Agent Hub draft PR smoke check. -->
